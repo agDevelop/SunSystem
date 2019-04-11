@@ -1,0 +1,109 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="Content/styles.css">
+
+  <title>SunSystem!</title>
+</head>
+<body>
+  <header>
+    <img src="Images/logo.png" class="logo" alt="Лого"/>
+    <ul class="main-menu">
+      <li><a href="#"><b>SunSystem</b></a></li>
+      <li><a href="#">Новая игра</a></li>
+      <li><a href="#">Продолжить</a></li>
+      <li><a href="#">FAQ</a></li>
+    </ul>
+  </header>
+
+  <div class="system">
+    <div id="sun" class="sun"></div>
+
+    <div id="obj" class="mer-path"></div>
+    <div id="mer" class="mer"></div>
+
+    <div id="obj" class="ven-path"></div>
+    <div id="ven" class="ven"></div>
+
+    <div id="obj" class="ear-path"></div>
+    <div id="ear" class="ear"></div>
+
+    <div id="obj" class="mar-path"></div>
+    <div id="mar" class="mar"></div>
+
+    <div id="obj" class="jup-path"></div>
+    <div id="jup" class="jup">
+      <div class="spot"></div>
+    </div>
+
+    <div id="obj" class="sat-path"></div>
+
+    <div id="sat" class="sat">
+      <div class="f-ring"></div>
+      <div class="a-ring"></div>
+      <div class="b-ring"></div>
+      <div class="c-ring"></div>
+    </div>
+
+    <div id="obj" class="ura-path"></div>
+    <div id="ura" class="ura">
+      <div class="e-ring"></div>
+    </div>
+
+    <div id="obj" class="nep-path"></div>
+    <div id="nep" class="nep"></div>
+
+    <div id="obj" class="plu-path"></div>
+    <div id="plu" class="plu"></div>
+  </div>
+  
+  <footer>
+    <div class="copyright">
+      <p">&copy; Гончаров Андрей, группа 181-321</p>
+    </div>
+  </footer>
+  <script type="text/javascript" src="Scripts/jquery-3.3.1.min.js"></script>
+
+  <script type="text/javascript">
+    jQuery(document).ready(function(){
+
+      $('#mer').hover(function() {
+        $(this).hide();
+      });
+
+      $('#ven').hover(function() {
+        $(this).hide();
+      });
+
+      $('#ear').hover(function() {
+        $(this).hide();
+      });
+
+      $('#mar').hover(function() {
+        $(this).hide();
+      });
+
+      $('#jup').hover(function() {
+        $(this).hide();
+      });
+
+      $('#sat').hover(function() {
+        $(this).hide();
+      });
+
+      $('#ura').hover(function() {
+        $(this).hide();
+      });
+
+      $('#nep').hover(function() {
+        $(this).hide();
+      });
+
+      $('#plu').hover(function() {
+        $(this).hide();
+      });
+    });
+
+  </script>
+</body>
+</html>

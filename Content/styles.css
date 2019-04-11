@@ -1,0 +1,468 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  background-image: url(../Images/space_x.jpg);
+  background-size: 100%;
+  background-repeat: repeat-y;
+  min-height: 2025px;
+}
+
+.hidden {
+
+  animation-play-state: stopped;
+  width: 0px;
+  height: 0px;
+  opacity: 0;
+}
+
+.system {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: scale(0.75);
+  transform: scale(0.75);
+}
+
+.sun {
+  width: 144px;
+  height: 144px;
+  border-radius: 72px;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -72px;
+  background-image: url("../Images/sun.jpg");
+  background-size: 144px;
+  background-repeat: no-repeat;
+}
+
+@keyframes rot-mer {
+  from {
+    transform: rotate(0deg) translatey(-84px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translatey(-84px) rotate(-360deg);
+  }
+}
+
+.mer {
+  width: 3.5px;
+  height: 3.5px;
+  border-radius: 50%;
+  background-color: #888;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -1.75px;
+  animation: rot-mer 0.88s infinite linear;
+  animation: rot-mer 0.88s infinite linear;
+  z-index: 200;
+}
+
+.mer-path {
+  width: 168px;
+  height: 168px;
+  border-radius: 50%;
+  z-index: 100;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -84px;
+  border: solid 1px #444;
+}
+
+@keyframes rot-ven {
+  from {
+    transform: rotate(0deg) translatey(-90px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translatey(-90px) rotate(-360deg);
+  }
+}
+
+.ven {
+  width: 5.5px;
+  height: 5.5px;
+  border-radius: 50%;
+  background-color: #f5f9be;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -2.75px;
+  animation: rot-ven 2.25s infinite linear;
+  animation: rot-ven 2.25s infinite linear;
+  z-index: 200;
+}
+
+.ven-path {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  z-index: 100;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -90px;
+  border: solid 1px #444;
+}
+
+@keyframes rot-ear {
+  from {
+    transform: rotate(0deg) translatey(-102px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translatey(-102px) rotate(-360deg);
+  }
+}
+.ear {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #4b94f9;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -3.5px;
+  animation: rot-ear 3.65s infinite linear;
+  animation: rot-ear 3.65s infinite linear;
+  z-index: 200;
+}
+
+.ear-path {
+  width: 204px;
+  height: 204px;
+  border-radius: 50%;
+  z-index: 100;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -102px;
+  border: solid 1px #444;
+}
+
+@keyframes rot-mar {
+  from {
+    transform: rotate(0deg) translatey(-118px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translatey(-118px) rotate(-360deg);
+  }
+}
+
+.mar {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #dd411a;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -3px;
+  animation: rot-mar 6.87s infinite linear;
+  animation: rot-mar 6.87s infinite linear;
+  z-index: 200;
+}
+
+.mar-path {
+  width: 236px;
+  height: 236px;
+  border-radius: 50%;
+  z-index: 100;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -118px;
+  border: solid 1px #444;
+}
+
+@keyframes rot-jup {
+  from {
+    transform: rotate(0deg) translatey(-228px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translatey(-228px) rotate(-360deg);
+  }
+}
+.jup {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: #eaad3b;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -35px;
+  animation: rot-jup 43.32s infinite linear;
+  animation: rot-jup 43.32s infinite linear;
+  z-index: 200;
+}
+
+.jup-path {
+  width: 456px;
+  height: 456px;
+  border-radius: 50%;
+  z-index: 100;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -228px;
+  border: solid 1px #444;
+}
+
+@keyframes rot-sat {
+  from {
+    transform: rotate(0deg) translatey(-362px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translatey(-362px) rotate(-360deg);
+  }
+}
+.sat {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background-color: #d6cd93;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -29px;
+  animation: rot-sat 107.59s infinite linear;
+  animation: rot-sat 107.59s infinite linear;
+  z-index: 200;
+}
+
+.sat-path {
+  width: 724px;
+  height: 724px;
+  border-radius: 50%;
+  z-index: 100;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -362px;
+  border: solid 1px #444;
+}
+
+@keyframes rot-ura {
+  from {
+    transform: rotate(0deg) translatey(-648px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translatey(-648px) rotate(-360deg);
+  }
+}
+.ura {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #bfeef2;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -13px;
+  animation: rot-ura 306.87s infinite linear;
+  animation: rot-ura 306.87s infinite linear;
+  z-index: 200;
+}
+
+.ura-path {
+  width: 1296px;
+  height: 1296px;
+  border-radius: 50%;
+  z-index: 100;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -648px;
+  border: solid 1px #444;
+}
+
+@keyframes rot-nep {
+  from {
+    transform: rotate(0deg) translatey(-972px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translatey(-972px) rotate(-360deg);
+  }
+}
+.nep {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #363ed7;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -12px;
+  animation: rot-nep 601.9s infinite linear;
+  animation: rot-nep 601.9s infinite linear;
+  z-index: 200;
+}
+
+.nep-path {
+  width: 1944px;
+  height: 1944px;
+  border-radius: 50%;
+  z-index: 100;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -972px;
+  border: solid 1px #444;
+}
+
+@keyframes rot-plu {
+  from {
+    transform: rotate(0deg) translatey(-1246px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translatey(-1246px) rotate(-360deg);
+  }
+}
+.plu {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #963;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -1.5px;
+  animation: rot-plu 904.65s infinite linear;
+  animation: rot-plu 904.65s infinite linear;
+  z-index: 200;
+}
+
+.plu-path {
+  width: 2492px;
+  height: 2492px;
+  border-radius: 50%;
+  z-index: 100;
+  position: absolute;
+  top: 1066px;
+  left: 50%;
+  margin: -1246px;
+  border: solid 1px #444;
+}
+
+.mar {
+  background-image: repeating-linear-gradient(to bottom, #fff, #fff 1px, transparent 1px, transparent 5px);
+}
+
+.jup {
+  background-image: repeating-linear-gradient(6deg, #797663 22px, #e1dcde 16px, #c3a992 30px, #e9ece2 30px);
+}
+
+div[class$="-ring"] {
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0.7;
+  transform: rotatex(45deg);
+  transform: rotatex(45deg);
+}
+
+.a-ring {
+  border: solid 5px #96866f;
+  width: 119px;
+  height: 119px;
+  margin: -64.5px;
+}
+
+.b-ring {
+  border: solid 10px #554c3c;
+  width: 104px;
+  height: 104px;
+  margin: -62px;
+}
+
+.c-ring {
+  border: solid 9px #574f4a;
+  width: 95px;
+  height: 95px;
+  margin: -56.5px;
+}
+
+.f-ring {
+  border: solid 2px #908e8d;
+  width: 133px;
+  height: 133px;
+  margin: -68.5px;
+}
+
+.e-ring {
+  border: solid 7px #908e8d;
+  width: 76px;
+  height: 76px;
+  margin: -45px;
+  transform: rotatex(0deg) rotatey(89deg) !important;
+  transform: rotatex(0deg) rotatey(89deg) !important;
+}
+
+.plu, .plu-path {
+  top: 1354px;
+}
+
+header {
+  padding: 35px 40px;
+    background: url("../Images/space-facts-1.jpg") no-repeat center center;
+    background-size: cover;
+
+}
+
+.logo 
+{
+  position: absolute;
+  width: 85px;
+  left: 10px;
+  top: 15px;
+}
+
+nav {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.main-menu {
+  font-size: larger;
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  text-align: center;
+}
+
+.main-menu li {
+  display: inline-block;
+  margin-right: 0;
+  width: 10%;
+}
+
+.main-menu a {
+  display: block;
+  margin-left: -1px;
+  padding: 8px 10px;
+  color: #d6cd93;
+  border-left: 1px solid #003636;
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+.main-menu a:hover {
+  color: #000;
+  background-color: #ff9703;
+  box-shadow: 0 5px 30px #fff;
+}
